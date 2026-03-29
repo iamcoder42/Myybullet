@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yüksek Kaliteli Kurşun Tel ve Havalı Tüfek Saçmaları">
+    <title>MyBullet - Kurşun Tel ve Havalı Tüfek Saçması</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <!-- Buraya kendi "logo.png" dosyanızı koyduğunuzda alttaki görsel aktif olacaktır -->
+                <img src="assets/logo-placeholder.svg" alt="MyBullet Logo" class="brand-logo" id="mainLogo">
+                <span class="logo-text">MyBullet</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menüyü Aç">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Ana Sayfa</a>
+                <a href="#about" class="nav-link">Hakkımızda</a>
+                <a href="#products" class="nav-link">Ürünlerimiz</a>
+                <a href="#contact" class="nav-link">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- .hero class'ının içine arka planda koyacağınız silah resminin kodunu styles.css'te belirttik -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Kalitede Tam <span class="text-accent">İsabet</span></h1>
+            <p class="hero-subtitle">Profesyonellerin tercihi yüksek kaliteli kurşun tel ve havalı tüfek saçmaları. Üstün balistik performans ve mükemmel aerodinamik tasarım.</p>
+            <a href="#products" class="btn btn-primary">Ürünlerimizi İnceleyin</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title">Hakkımızda</h2>
+                <div class="title-underline"></div>
+                <p>Yılların getirdiği tecrübe ile atıcılık ve av tutkunları için özel olarak ürettiğimiz <strong>kurşun tel ve havalı tüfek saçmaları</strong> ile sektörde güvenilirliğin adıyız.</p>
+                <p>Amacımız en dengeli, pürüzsüz ve hedeften şaşmayan ürünleri sunmaktır. Sadece kalite değil, sürekli gelişim vizyonu ile üretiyor; siz değerli müşterilerimizin beklentilerini her atışta en üst seviyeye çıkartmayı hedefliyoruz.</p>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Yüksek Hassasiyet</h3>
+                        <p class="feature-desc">Kusursuz aerodinamik özelliklerle üretilen saçmalar.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🛡️</div>
+                        <h3 class="feature-title">Premium Malzeme</h3>
+                        <p class="feature-desc">Saf ve kaliteli, oksidasyona dirençli kurşun telleri.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image-wrapper">
+                <div class="about-image-placeholder">
+                    <span>Kurşun İşçiliği Görseli</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ürünlerimiz</h2>
+                <div class="title-underline"></div>
+                <p class="section-desc">Ürettiğimiz tüm kurşun teller ve havalı tüfek saçmaları yüksek standartlarda kontrol edilmektedir.</p>
+            </div>
+
+            <!-- Product Category: Kurşun Tel -->
+            <div class="category-block">
+                <h3 class="category-title">Kurşun Teller</h3>
+                <div class="product-grid" id="grid-wire">
+                    <!-- Placeholder Items (To be replaced with real images) -->
+                    <div class="product-card" onclick="openModal('assets/placeholder1.jpg', 'Premium Kurşun Tel 1')">
+                        <div class="product-image-container">
+                            <div class="image-skeleton">Fotoğraf eklenecek</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Premium Kurşun Tel (Örnek)</h4>
+                            <a href="https://wa.me/905555555555?text=Merhaba,%20Premium%20Kur%C5%9Fun%20Tel%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="btn-whatsapp-product" target="_blank" onclick="event.stopPropagation()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 414.7c-32.3 0-64-8.8-91.8-25.3l-6.6-4-68.1 17.9 18.2-66.4-4.4-7C53.2 300.9 44 263.1 44 223.9c0-99.1 80.6-179.7 179.8-179.7 54.3 0 105.3 21.1 143.7 59.6 38.3 38.4 59.4 89.4 59.4 143.7-.1 99.1-80.7 179.8-179.7 179.8zM321.6 255.4c-5.4-2.7-31.9-15.8-36.8-17.6-4.9-1.8-8.5-2.7-12.1 2.7-3.6 5.4-14 17.6-17.2 21.2-3.2 3.6-6.4 4.1-11.8 1.3-5.4-2.7-22.8-8.4-43.4-26.8-16.1-14.3-27-32-30.2-37.4-3.2-5.4-.3-8.3 2.4-11 2.4-2.4 5.4-6.3 8.1-9.4 2.7-3.2 3.6-5.4 5.4-9.1 1.8-3.6 .9-6.8-.4-9.5-1.3-2.7-12.1-29.2-16.6-40-4.4-10.5-8.8-9.1-12.1-9.3-3.2-.2-6.8-.2-10.4-.2-3.6 0-9.5 1.4-14.4 6.8-5 5.4-19 18.5-19 45s19.5 52.1 22.2 55.7c2.7 3.6 38 58.1 92 81.3 12.9 5.5 22.9 8.8 30.7 11.3 12.9 4.1 24.6 3.5 33.9 2.1 10.4-1.5 31.9-13 36.4-25.6 4.5-12.6 4.5-23.4 3.2-25.6-1.3-2.3-4.9-3.6-10.3-6.4z"/></svg> Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openModal('assets/placeholder2.jpg', 'Özel Çekim Tel 2')">
+                        <div class="product-image-container">
+                            <div class="image-skeleton">Fotoğraf eklenecek</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Özel Çekim Tel (Örnek)</h4>
+                            <a href="https://wa.me/905555555555?text=Merhaba,%20Özel%20Çekim%20Tel%20hakkında%20bilgi%20almak%20istiyorum." class="btn-whatsapp-product" target="_blank" onclick="event.stopPropagation()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 414.7c-32.3 0-64-8.8-91.8-25.3l-6.6-4-68.1 17.9 18.2-66.4-4.4-7C53.2 300.9 44 263.1 44 223.9c0-99.1 80.6-179.7 179.8-179.7 54.3 0 105.3 21.1 143.7 59.6 38.3 38.4 59.4 89.4 59.4 143.7-.1 99.1-80.7 179.8-179.7 179.8zM321.6 255.4c-5.4-2.7-31.9-15.8-36.8-17.6-4.9-1.8-8.5-2.7-12.1 2.7-3.6 5.4-14 17.6-17.2 21.2-3.2 3.6-6.4 4.1-11.8 1.3-5.4-2.7-22.8-8.4-43.4-26.8-16.1-14.3-27-32-30.2-37.4-3.2-5.4-.3-8.3 2.4-11 2.4-2.4 5.4-6.3 8.1-9.4 2.7-3.2 3.6-5.4 5.4-9.1 1.8-3.6 .9-6.8-.4-9.5-1.3-2.7-12.1-29.2-16.6-40-4.4-10.5-8.8-9.1-12.1-9.3-3.2-.2-6.8-.2-10.4-.2-3.6 0-9.5 1.4-14.4 6.8-5 5.4-19 18.5-19 45s19.5 52.1 22.2 55.7c2.7 3.6 38 58.1 92 81.3 12.9 5.5 22.9 8.8 30.7 11.3 12.9 4.1 24.6 3.5 33.9 2.1 10.4-1.5 31.9-13 36.4-25.6 4.5-12.6 4.5-23.4 3.2-25.6-1.3-2.3-4.9-3.6-10.3-6.4z"/></svg> Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openModal('assets/placeholder3.jpg', 'Kurşun Tel Bobin 3')">
+                        <div class="product-image-container">
+                            <div class="image-skeleton">Fotoğraf eklenecek</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Kurşun Tel Bobin (Örnek)</h4>
+                            <a href="https://wa.me/905555555555?text=Merhaba,%20Kurşun%20Tel%20Bobin%20hakkında%20bilgi%20almak%20istiyorum." class="btn-whatsapp-product" target="_blank" onclick="event.stopPropagation()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 414.7c-32.3 0-64-8.8-91.8-25.3l-6.6-4-68.1 17.9 18.2-66.4-4.4-7C53.2 300.9 44 263.1 44 223.9c0-99.1 80.6-179.7 179.8-179.7 54.3 0 105.3 21.1 143.7 59.6 38.3 38.4 59.4 89.4 59.4 143.7-.1 99.1-80.7 179.8-179.7 179.8zM321.6 255.4c-5.4-2.7-31.9-15.8-36.8-17.6-4.9-1.8-8.5-2.7-12.1 2.7-3.6 5.4-14 17.6-17.2 21.2-3.2 3.6-6.4 4.1-11.8 1.3-5.4-2.7-22.8-8.4-43.4-26.8-16.1-14.3-27-32-30.2-37.4-3.2-5.4-.3-8.3 2.4-11 2.4-2.4 5.4-6.3 8.1-9.4 2.7-3.2 3.6-5.4 5.4-9.1 1.8-3.6 .9-6.8-.4-9.5-1.3-2.7-12.1-29.2-16.6-40-4.4-10.5-8.8-9.1-12.1-9.3-3.2-.2-6.8-.2-10.4-.2-3.6 0-9.5 1.4-14.4 6.8-5 5.4-19 18.5-19 45s19.5 52.1 22.2 55.7c2.7 3.6 38 58.1 92 81.3 12.9 5.5 22.9 8.8 30.7 11.3 12.9 4.1 24.6 3.5 33.9 2.1 10.4-1.5 31.9-13 36.4-25.6 4.5-12.6 4.5-23.4 3.2-25.6-1.3-2.3-4.9-3.6-10.3-6.4z"/></svg> Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Category: Havalı Tüfek Saçması -->
+            <div class="category-block">
+                <h3 class="category-title">Havalı Tüfek Saçmaları</h3>
+                <div class="product-grid" id="grid-pellet">
+                    <div class="product-card" onclick="openModal('assets/placeholder4.jpg', 'Sivri Uçlu Saçma')">
+                        <div class="product-image-container">
+                            <div class="image-skeleton">Fotoğraf eklenecek</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Sivri Uçlu Saçma (Örnek)</h4>
+                            <a href="https://wa.me/905555555555?text=Merhaba,%20Sivri%20Uçlu%20Saçma%20hakkında%20bilgi%20almak%20istiyorum." class="btn-whatsapp-product" target="_blank" onclick="event.stopPropagation()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 414.7c-32.3 0-64-8.8-91.8-25.3l-6.6-4-68.1 17.9 18.2-66.4-4.4-7C53.2 300.9 44 263.1 44 223.9c0-99.1 80.6-179.7 179.8-179.7 54.3 0 105.3 21.1 143.7 59.6 38.3 38.4 59.4 89.4 59.4 143.7-.1 99.1-80.7 179.8-179.7 179.8zM321.6 255.4c-5.4-2.7-31.9-15.8-36.8-17.6-4.9-1.8-8.5-2.7-12.1 2.7-3.6 5.4-14 17.6-17.2 21.2-3.2 3.6-6.4 4.1-11.8 1.3-5.4-2.7-22.8-8.4-43.4-26.8-16.1-14.3-27-32-30.2-37.4-3.2-5.4-.3-8.3 2.4-11 2.4-2.4 5.4-6.3 8.1-9.4 2.7-3.2 3.6-5.4 5.4-9.1 1.8-3.6 .9-6.8-.4-9.5-1.3-2.7-12.1-29.2-16.6-40-4.4-10.5-8.8-9.1-12.1-9.3-3.2-.2-6.8-.2-10.4-.2-3.6 0-9.5 1.4-14.4 6.8-5 5.4-19 18.5-19 45s19.5 52.1 22.2 55.7c2.7 3.6 38 58.1 92 81.3 12.9 5.5 22.9 8.8 30.7 11.3 12.9 4.1 24.6 3.5 33.9 2.1 10.4-1.5 31.9-13 36.4-25.6 4.5-12.6 4.5-23.4 3.2-25.6-1.3-2.3-4.9-3.6-10.3-6.4z"/></svg> Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openModal('assets/placeholder5.jpg', 'Paraşüt Saçma')">
+                        <div class="product-image-container">
+                            <div class="image-skeleton">Fotoğraf eklenecek</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Paraşüt Saçma (Örnek)</h4>
+                            <a href="https://wa.me/905555555555?text=Merhaba,%20Paraşüt%20Saçma%20hakkında%20bilgi%20almak%20istiyorum." class="btn-whatsapp-product" target="_blank" onclick="event.stopPropagation()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 414.7c-32.3 0-64-8.8-91.8-25.3l-6.6-4-68.1 17.9 18.2-66.4-4.4-7C53.2 300.9 44 263.1 44 223.9c0-99.1 80.6-179.7 179.8-179.7 54.3 0 105.3 21.1 143.7 59.6 38.3 38.4 59.4 89.4 59.4 143.7-.1 99.1-80.7 179.8-179.7 179.8zM321.6 255.4c-5.4-2.7-31.9-15.8-36.8-17.6-4.9-1.8-8.5-2.7-12.1 2.7-3.6 5.4-14 17.6-17.2 21.2-3.2 3.6-6.4 4.1-11.8 1.3-5.4-2.7-22.8-8.4-43.4-26.8-16.1-14.3-27-32-30.2-37.4-3.2-5.4-.3-8.3 2.4-11 2.4-2.4 5.4-6.3 8.1-9.4 2.7-3.2 3.6-5.4 5.4-9.1 1.8-3.6 .9-6.8-.4-9.5-1.3-2.7-12.1-29.2-16.6-40-4.4-10.5-8.8-9.1-12.1-9.3-3.2-.2-6.8-.2-10.4-.2-3.6 0-9.5 1.4-14.4 6.8-5 5.4-19 18.5-19 45s19.5 52.1 22.2 55.7c2.7 3.6 38 58.1 92 81.3 12.9 5.5 22.9 8.8 30.7 11.3 12.9 4.1 24.6 3.5 33.9 2.1 10.4-1.5 31.9-13 36.4-25.6 4.5-12.6 4.5-23.4 3.2-25.6-1.3-2.3-4.9-3.6-10.3-6.4z"/></svg> Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card" onclick="openModal('assets/placeholder6.jpg', 'Kubbeli Saçma')">
+                        <div class="product-image-container">
+                            <div class="image-skeleton">Fotoğraf eklenecek</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Kubbeli Saçma (Örnek)</h4>
+                            <a href="https://wa.me/905555555555?text=Merhaba,%20Kubbeli%20Saçma%20hakkında%20bilgi%20almak%20istiyorum." class="btn-whatsapp-product" target="_blank" onclick="event.stopPropagation()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 414.7c-32.3 0-64-8.8-91.8-25.3l-6.6-4-68.1 17.9 18.2-66.4-4.4-7C53.2 300.9 44 263.1 44 223.9c0-99.1 80.6-179.7 179.8-179.7 54.3 0 105.3 21.1 143.7 59.6 38.3 38.4 59.4 89.4 59.4 143.7-.1 99.1-80.7 179.8-179.7 179.8zM321.6 255.4c-5.4-2.7-31.9-15.8-36.8-17.6-4.9-1.8-8.5-2.7-12.1 2.7-3.6 5.4-14 17.6-17.2 21.2-3.2 3.6-6.4 4.1-11.8 1.3-5.4-2.7-22.8-8.4-43.4-26.8-16.1-14.3-27-32-30.2-37.4-3.2-5.4-.3-8.3 2.4-11 2.4-2.4 5.4-6.3 8.1-9.4 2.7-3.2 3.6-5.4 5.4-9.1 1.8-3.6 .9-6.8-.4-9.5-1.3-2.7-12.1-29.2-16.6-40-4.4-10.5-8.8-9.1-12.1-9.3-3.2-.2-6.8-.2-10.4-.2-3.6 0-9.5 1.4-14.4 6.8-5 5.4-19 18.5-19 45s19.5 52.1 22.2 55.7c2.7 3.6 38 58.1 92 81.3 12.9 5.5 22.9 8.8 30.7 11.3 12.9 4.1 24.6 3.5 33.9 2.1 10.4-1.5 31.9-13 36.4-25.6 4.5-12.6 4.5-23.4 3.2-25.6-1.3-2.3-4.9-3.6-10.3-6.4z"/></svg> Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                     <div class="product-card" onclick="openModal('assets/placeholder7.jpg', 'Ağır Tip Saçma')">
+                        <div class="product-image-container">
+                            <div class="image-skeleton">Fotoğraf eklenecek</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Ağır Tip Saçma (Örnek)</h4>
+                            <a href="https://wa.me/905555555555?text=Merhaba,%20Ağır%20Tip%20Saçma%20hakkında%20bilgi%20almak%20istiyorum." class="btn-whatsapp-product" target="_blank" onclick="event.stopPropagation()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 414.7c-32.3 0-64-8.8-91.8-25.3l-6.6-4-68.1 17.9 18.2-66.4-4.4-7C53.2 300.9 44 263.1 44 223.9c0-99.1 80.6-179.7 179.8-179.7 54.3 0 105.3 21.1 143.7 59.6 38.3 38.4 59.4 89.4 59.4 143.7-.1 99.1-80.7 179.8-179.7 179.8zM321.6 255.4c-5.4-2.7-31.9-15.8-36.8-17.6-4.9-1.8-8.5-2.7-12.1 2.7-3.6 5.4-14 17.6-17.2 21.2-3.2 3.6-6.4 4.1-11.8 1.3-5.4-2.7-22.8-8.4-43.4-26.8-16.1-14.3-27-32-30.2-37.4-3.2-5.4-.3-8.3 2.4-11 2.4-2.4 5.4-6.3 8.1-9.4 2.7-3.2 3.6-5.4 5.4-9.1 1.8-3.6 .9-6.8-.4-9.5-1.3-2.7-12.1-29.2-16.6-40-4.4-10.5-8.8-9.1-12.1-9.3-3.2-.2-6.8-.2-10.4-.2-3.6 0-9.5 1.4-14.4 6.8-5 5.4-19 18.5-19 45s19.5 52.1 22.2 55.7c2.7 3.6 38 58.1 92 81.3 12.9 5.5 22.9 8.8 30.7 11.3 12.9 4.1 24.6 3.5 33.9 2.1 10.4-1.5 31.9-13 36.4-25.6 4.5-12.6 4.5-23.4 3.2-25.6-1.3-2.3-4.9-3.6-10.3-6.4z"/></svg> Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <div class="modal-content-container">
+            <div class="modal-skeleton" id="modalSkeleton">Fotoğraf eklenecek</div>
+            <img class="modal-content" id="modalImg" src="" alt="Ürün Görseli" style="display: none;">
+            <div id="modalCaption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Contact & Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/logo-placeholder.svg" alt="MyBullet Logo" class="brand-logo">
+                    <span class="logo-text">MyBullet</span>
+                </a>
+                <p class="footer-desc">En yüksek kalite kurşun tel ve havalı tüfek saçmaları üretim ve tedariği.</p>
+            </div>
+            <div class="footer-contact">
+                <h3 class="footer-title">İletişim</h3>
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-icon">📍</span> 
+                        Örnek Organize Sanayi Bölgesi, Avcılar Sokak No:1 İstanbul
+                    </li>
+                    <li>
+                        <span class="contact-icon">📞</span> 
+                        <a href="tel:+905555555555">+90 (555) 555 55 55</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">✉️</span> 
+                        <a href="mailto:info@mybullet.com">info@mybullet.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> MyBullet Kurşun ve Saçma. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/905555555555" class="floating-whatsapp" target="_blank" aria-label="WhatsApp ile İletişime Geç">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 414.7c-32.3 0-64-8.8-91.8-25.3l-6.6-4-68.1 17.9 18.2-66.4-4.4-7C53.2 300.9 44 263.1 44 223.9c0-99.1 80.6-179.7 179.8-179.7 54.3 0 105.3 21.1 143.7 59.6 38.3 38.4 59.4 89.4 59.4 143.7-.1 99.1-80.7 179.8-179.7 179.8zM321.6 255.4c-5.4-2.7-31.9-15.8-36.8-17.6-4.9-1.8-8.5-2.7-12.1 2.7-3.6 5.4-14 17.6-17.2 21.2-3.2 3.6-6.4 4.1-11.8 1.3-5.4-2.7-22.8-8.4-43.4-26.8-16.1-14.3-27-32-30.2-37.4-3.2-5.4-.3-8.3 2.4-11 2.4-2.4 5.4-6.3 8.1-9.4 2.7-3.2 3.6-5.4 5.4-9.1 1.8-3.6 .9-6.8-.4-9.5-1.3-2.7-12.1-29.2-16.6-40-4.4-10.5-8.8-9.1-12.1-9.3-3.2-.2-6.8-.2-10.4-.2-3.6 0-9.5 1.4-14.4 6.8-5 5.4-19 18.5-19 45s19.5 52.1 22.2 55.7c2.7 3.6 38 58.1 92 81.3 12.9 5.5 22.9 8.8 30.7 11.3 12.9 4.1 24.6 3.5 33.9 2.1 10.4-1.5 31.9-13 36.4-25.6 4.5-12.6 4.5-23.4 3.2-25.6-1.3-2.3-4.9-3.6-10.3-6.4z"/></svg>
+    </a>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
